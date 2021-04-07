@@ -12,12 +12,14 @@ var over65_2 = over65.toFixed(2);
 
 if(eta < 18){
   document.getElementById('risultato').innerHTML = "Il costo del biglietto è di " + minorenni2 + "€ con il 20% di sconto";
+  document.getElementById('risultato').style.color = '#800000';
 
 }else if(eta >=18 && eta <65){
   document.getElementById('risultato').innerHTML = "Il costo totale del biglietto sarà di " + totale + "€"
 
 }else{
-  document.getElementById('risultato').innerHTML = "Il costo del biglietto è di " + over65_2 + "€ con il 40% di sconto"
+  document.getElementById('risultato').innerHTML = "Il costo del biglietto è di " + over65_2 + "€ con il 40% di sconto";
+  document.getElementById('risultato').style.color = '#1e90ff';
 }
 
 /* console.log(kilometri)
